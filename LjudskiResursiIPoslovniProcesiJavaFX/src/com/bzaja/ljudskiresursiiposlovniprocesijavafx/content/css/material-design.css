@@ -1,0 +1,285 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 29, 2020, 10:04:27 AM
+    Author     : Borna
+*/
+
+*{
+    primary-color: #2196f3;
+    primary-color-light: #42a5f5;
+    primary-color-dark: #1e88e5;
+    light-grey-color: #e0e0e0;
+    dark-grey-color: #bdbdbd;
+    red-color: #e53935;
+    light-red-color: #f44336;
+    dark-red-color: #d32f2f;
+}
+
+.card, .button, .menu-button, .menu-bar, .pageable-table-view{
+    -fx-background-radius: 2px;
+    -fx-effect: dropshadow(gaussian, #303030, 5.0, 0.0, 0.0, 0.0);
+}
+
+/******************************************************************************
+*                                                                             *
+* Buttons, Menu Button                                                        *
+*                                                                             *
+******************************************************************************/
+
+.button {
+    -fx-background-color: primary-color;
+    -fx-text-fill: white;
+}
+
+.menu-button{
+    -fx-background-color: primary-color;
+}
+
+.menu-button .arrow-button .arrow{
+    -fx-background-color: white;
+}
+
+.button:hover, .menu-button:hover{
+    -fx-background-color: primary-color-light;
+}
+
+.button:pressed, .menu-button:pressed{
+    -fx-background-color: primary-color-dark;
+}
+
+.remove-filter-button, .remove-all-filters-button{
+    -fx-background-color: red-color;
+}
+
+.remove-filter-button:hover, .remove-all-filters-button:hover{
+    -fx-background-color: light-red-color;
+}
+
+.remove-filter-button:pressed, .remove-all-filters-button:pressed{
+    -fx-background-color: dark-red-color;
+}
+
+/******************************************************************************
+*                                                                             *
+* Text Field, Number Field, Date Picker, Clearable Date Picker, Combo Box,    *
+* Text Area, Spinner                                                          *
+*                                                                             *
+******************************************************************************/
+
+.text-field, .number-field, .text-area, .date-picker, .combo-box, .spinner{
+    -fx-background-color: transparent;
+    -fx-border-color: dark-grey-color;
+    -fx-border-width: 0 0 2 0;
+    -fx-padding: 2 0 1 0;
+}
+
+.text-field, .number-field{
+    -fx-pref-height: 30px;
+}
+
+.text-field:focused, .number-field:focused, .text-area:focused, .date-picker:focused, .combo-box:focused{
+    -fx-border-color: primary-color;
+}
+
+.text-area .scroll-pane .viewport .content{
+    -fx-background-color: transparent;
+}
+
+.date-picker .button, .clearable-date-picker .button{
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-effect: null;
+}
+
+.date-picker .button:hover, .clearable-date-picker .button:hover{
+    -fx-background-color: #e0e0e0;
+}
+
+.date-picker .button:pressed, .clearable-date-picker .button:pressed{
+    -fx-background-color: #bdbdbd;
+}
+
+.date-picker{
+    -fx-pref-height: 31px;
+    -fx-border-width: 0 0 0 0;
+}
+
+.date-picker .arrow-button{
+    -fx-background-color: transparent;
+}
+
+.date-picker .arrow-button:hover{
+    -fx-background-color: light-grey-color;
+}
+
+.date-picker .arrow-button:pressed{
+    -fx-background-color: dark-grey-color;
+}
+
+.date-picker .arrow-button .arrow{
+    -fx-background-color: primary-color;
+}
+
+.spinner{
+    -fx-border-color: transparent;
+}
+
+.spinner .increment-arrow-button, .spinner .decrement-arrow-button{
+    -fx-background-radius: 0px;
+    -fx-background-color: transparent;
+}
+
+.spinner .increment-arrow-button:hover, .spinner .decrement-arrow-button:hover{
+    -fx-background-color: light-grey-color;
+}
+
+.spinner .increment-arrow-button:pressed, .spinner .decrement-arrow-button:pressed{
+    -fx-background-color: dark-grey-color;
+}
+
+/******************************************************************************
+*                                                                             *
+* Check Box                                                                   *
+*                                                                             *
+******************************************************************************/
+
+.check-box .box{
+    -fx-background-color: transparent;
+    -fx-border-color: dark-grey-color;
+    -fx-border-radius: 2px;
+}
+
+.check-box:selected .box{
+    -fx-border-color: transparent;
+    -fx-background-color: primary-color;
+}
+
+.check-box:selected .box .mark{
+    -fx-background-color: white;
+}
+
+/******************************************************************************
+*                                                                             *
+* Radio Button                                                                *
+*                                                                             *
+******************************************************************************/
+
+.radio-button .radio{
+    -fx-border-radius: 100%;
+    -fx-background-color: transparent;
+    -fx-border-color: dark-grey-color;
+}
+
+.radio-button:selected .radio{
+    -fx-border-color: primary-color;
+}
+
+.radio-button:selected .radio .dot{
+    -fx-background-color: primary-color;
+    -fx-background-insets: 0;
+}
+
+/******************************************************************************
+*                                                                             *
+* Menu Bar, Menu, Menu Item, Menu Button                                      *
+*                                                                             *
+******************************************************************************/
+
+.menu-bar{
+    -fx-background-color: primary-color;
+}
+
+.menu-bar .container .menu{
+    -fx-effect: null;
+}
+
+.menu{
+    -fx-padding: 10px;
+}
+
+.menu .label {
+    -fx-text-fill: white;
+}
+
+.menu-button .label {
+    -fx-text-fill: white;
+}
+
+.menu-item{
+    -fx-padding: 10px;
+}
+
+.menu-item .label {
+    -fx-text-fill: black;
+}
+
+.menu-item:hover, .menu-item:focused{
+    -fx-background-color: light-grey-color;
+}
+
+/******************************************************************************
+*                                                                             *
+* List View                                                                   *
+*                                                                             *
+******************************************************************************/
+
+.list-view .list-cell:even, .list-view .list-cell:odd{
+    -fx-background-color: white;
+}
+
+.list-view .list-cell{
+    -fx-padding: 10px;
+}
+
+.list-view .list-cell:selected, .list-view .list-cell:hover{
+    -fx-background-color: light-grey-color;
+    -fx-text-fill: black;
+}
+
+/******************************************************************************
+*                                                                             *
+* Pageable Table View, Table View                                             *
+*                                                                             *
+******************************************************************************/
+
+.pageable-table-view, .table-view .column-header-background .filler, .table-view .column-header-background .nested-column-header .table-column, .table-row-cell{
+    -fx-background-color: white;
+}
+
+.table-view{
+    -fx-border-color: white;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: black;
+    -fx-alignmnent: BASELINE_CENTER;
+    -fx-border-color: light-grey-color;
+}
+
+.table-view .table-row-cell{
+    -fx-cell-size: 40px;
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-view .table-row-cell:selected{
+    -fx-background-color: light-grey-color;
+}
+
+/******************************************************************************
+*                                                                             *
+* Scroll Bar                                                                  *
+*                                                                             *
+******************************************************************************/
+
+.scroll-bar:vertical, .scroll-bar:horizontal{
+    -fx-background-color: light-grey-color;
+}
+
+.scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb{
+    -fx-background-radius: 0px;
+    -fx-background-color: dark-grey-color;
+}

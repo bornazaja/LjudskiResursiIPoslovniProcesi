@@ -1,0 +1,103 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-Feb-2019, 15:50:09
+    Author     : Borna
+*/
+
+*{
+    danger-color: #ff4444;
+    warning-color: #ffbb33;
+    success-color: #00c851;
+    info-color: #33b5e5;
+}
+
+/******************************************************************************
+*                                                                             *
+* Headings                                                                   *
+*                                                                             *
+******************************************************************************/
+
+.h1, .title-text, .advanced-search-title{
+    -fx-font-size: 24px;
+}
+
+.h2, .search-title, .sort-title{
+    -fx-font-size: 20px;
+}
+
+.h3{
+    -fx-font-size: 16px;
+}
+
+/******************************************************************************
+*                                                                             *
+* Backgrounds                                                                 *
+*                                                                             *
+******************************************************************************/
+
+.bg-white{
+    -fx-background-color: white;
+}
+
+.bg-danger{
+    -fx-background-color: danger-color;
+}
+
+.bg-warning{
+    -fx-background-color: warning-color;
+}
+
+.bg-success{
+    -fx-background-color: success-color;
+}
+
+.bg-info{
+    -fx-background-color: info-color;
+}
+
+.bg-transparent{
+    -fx-background-color: transparent;
+}
+
+/******************************************************************************
+*                                                                             *
+* Texts                                                                 *
+*                                                                             *
+******************************************************************************/
+
+.text-danger{
+    -fx-text-fill: danger-color;
+}
+
+.text-white{
+    -fx-text-fill: white;
+}
+
+
+.font-weight-bold{
+    -fx-font-weight: bold;
+}
+
+/******************************************************************************
+*                                                                             *
+* DashboardTile                                                               *
+*                                                                             *
+******************************************************************************/
+
+.dashboard-tile.dashboard-tile-text-white .label{
+    -fx-text-fill: white;
+}
+
+/******************************************************************************
+*                                                                             *
+* TableView                                                                   *
+*                                                                             *
+******************************************************************************/
+
+.table-view .table-cell{
+    -fx-alignment: BASELINE_CENTER;
+}

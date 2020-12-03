@@ -1,0 +1,7 @@
+package com.bzaja.ljudskiresursiiposlovniprocesilibrary.feature.obracunugovoraodjelu;
+
+import com.bzaja.ljudskiresursiiposlovniprocesilibrary.feature.obracunugovora.ObracunUgovoraMaker;
+
+public interface ObracunUgovoraODjeluMaker extends ObracunUgovoraMaker<ObracunUgovoraODjelu, AddObracunUgovoraODjeluDto> {
+
+}

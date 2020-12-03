@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.bzaja.myjavafxlibrary.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane fx:id="root" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bzaja.ljudskiresursiiposlovniprocesijavafx.feature.obracunugovoraodjelu.ObracuniUgovoraODjeluController">
+    <children>
+        <PageableTableView fx:id="obracuniUgovoraODjeluPageableTableView" itemsPerPageText="Stavaka po stranici:" layoutX="20.0" layoutY="25.0" menuButtonText="Akcije" prefHeight="750.0" prefWidth="960.0" title="Obračuni ugovora o djelu" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="25.0" />
+    </children>
+</AnchorPane>

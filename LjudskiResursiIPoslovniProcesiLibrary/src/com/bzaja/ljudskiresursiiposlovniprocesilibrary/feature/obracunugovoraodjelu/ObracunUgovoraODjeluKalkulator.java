@@ -1,0 +1,7 @@
+package com.bzaja.ljudskiresursiiposlovniprocesilibrary.feature.obracunugovoraodjelu;
+
+import com.bzaja.ljudskiresursiiposlovniprocesilibrary.feature.obracunugovora.ObracunUgovoraKalkulator;
+
+public interface ObracunUgovoraODjeluKalkulator extends ObracunUgovoraKalkulator<ObracunUgovoraODjeluResultDto> {
+
+}

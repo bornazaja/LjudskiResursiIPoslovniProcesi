@@ -1,0 +1,7 @@
+package com.bzaja.ljudskiresursiiposlovniprocesilibrary.feature.obracunstudentskihugovora;
+
+import com.bzaja.ljudskiresursiiposlovniprocesilibrary.feature.obracunugovora.ObracunUgovoraMaker;
+
+public interface ObracunStudentskihUgovoraMaker extends ObracunUgovoraMaker<ObracunStudentskihUgovora, AddObracunStudentskihUgovoraDto> {
+
+}
