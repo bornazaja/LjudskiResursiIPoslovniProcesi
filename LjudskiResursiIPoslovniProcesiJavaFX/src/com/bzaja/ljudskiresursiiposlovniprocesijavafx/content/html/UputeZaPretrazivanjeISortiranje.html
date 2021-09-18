@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <style>
+            body {
+                font-family: Calibri;
+                padding: 10px;
+            }
+        </style>
+        <title>Upute za pretraživanje i sortiranje</title>
+    </head>
+    <body>
+        <div>
+            <h1>Upute za pretraživanje i soritranje</h1>
+            <hr />
+            <h2>Kriteriji pretraživanja</h2>
+            <ul>
+                <li>
+                    Operatori
+                    <ul>
+                        <li>I - definira da svi kriteriji koji su dodani, budu spojeni sa "I". Npr.: Prezime zaposlenika "Sadržava" "o" I Email "Počinje s" "mi".</li>
+                        <li>ILI - definira da svi kriteriji koji su dodani, budu spojeni sa "ILI". Npr.: Prezime zaposlenika "Sadržava" "o" ILI Email "Počinje s" "mi".</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    Dinamičko dodavanje kriterija - kriterije je moguće dinamički dodati (maksimalno 10) i brisati, te svaki kriterij sadržava sljedeće:
+                    <ul>
+                        <li>
+                            Vrsta kriterija - sadržava:
+                            <ul>
+                                <li>Uključiv - definira da navedeni kriterij <b>BUDE</b> uključen u pretragu. Npr.: "Uključiv" Ime zaposlenika koje završava s "a".</li>
+                                <li>Nije Uključiv - definira da navedeni kriterij <b>NE BUDE</b> uključen u pretragu. To jest negira kriterij. Npr.: "Nije uključiv" Ime zaposlenika koje završava s "a".</li>
+                            </ul>
+                        </li>
+                        <li>Stupac - definira stupac po kojem će se pretraživati.</li>
+                        <li>
+                            Operacija - sadržava:
+                            <ul>
+                                <li>Manji - npr.: želimo dohvatiti sve prireze gradova koji su manji od "15" %</li>
+                                <li>Manji ili jednak - npr.: želimo dohvatiti sve prireze gradova koji su manji ili jednaki "15" %</li>
+                                <li>Jednak - npr.: želimo dohvatiti sve zaposlenike čija su imena jednaka "miro"</li>
+                                <li>Počinje s - npr.: želimo dohvatiti sve zaposlenike čija imena počinju s "ma"</li>
+                                <li>Sadržava - npr.: želimo dohvatiti sve zaposlenike čija prezimena sadrže "a"</li>
+                                <li>Završava s - želimo dohvatiti sve zaposlenike čija prezimena završavaju s "ić"</li>
+                                <li>Veći - npr.: želimo dohvatiti sve zaposlenike čiji su datumi rođenja veći od "02.06.1992"</li>
+                                <li>Veći ili jednak - npr.: želimo dohvatiti sve zaposlenike čiji su datumi rođenja veći ili jednaki "02.06.1992"</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Vrijednost - unosi se željena vrijednost. Par napomena za polje "Vrijednost":
+                            <ul>
+                                <li>
+                                    Za stupac koji sadržava brojčane vrijednosti, umjesto decimalnog zareza, unosite točku.
+                                    Npr.: Umjesto "10,30", unosite "10.30".
+                                </li>
+                                <li>
+                                    Za stupac koji sadržava datumske vrijednosti unosite u formatu yyyy-mm-dd.
+                                    Npr.: Umjesto "10.03.2001", unosite "2001-03-10".
+                                </li>
+                                <li>
+                                    Za stupac koji sadržava vrijednosti "Da" i "Ne", unosite "1", odnosno "0".
+                                    Npr.: Za "Da" unosite "1", a za "Ne" unosite "0".
+                                </li>
+                                <li>Za bilo koji drugi stupac unosite vrijednosti koje biste inače unosili.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p><b>NAPOMENE:</b></p>
+            <ul>
+                <li>
+                    Operacije se prikazuju na "pametni način", dakle npr.:
+                    <ul>
+                        <li>
+                            Ukoliko se odabere stupac s tekstualnim vrijednostima, prikazati će se sljedeće operacije: jednak, počinje s, sadržava i završava s.
+                        </li>
+                        <li>
+                            Ukoliko se odabere stupac s brojčanim ili datumskim vrijednostima vrijednostima, prikazati će se sljedeće operacije: manji, manji ili jednak, jednak, veći i veći ili jednak.
+                        </li>
+                        <li>Ukoliko se odabere stupac s vrijednostima "Da" i "Ne", prikazati će se sljedeće operacije: jednak</li>
+                    </ul>
+                </li>
+                <li>
+                    Isto tako se mogu kombinirati operacije, primjerice želimo dohvatiti sve stope prireza grada od 5 do 10 posto, to možemo napraviti tako da u prvom kriteriju upotrijebimo operaciju "Veći ili jednak", a u drugom
+                    kriteriju "Manji ili jednak".
+                </li>
+            </ul>
+
+            <h2>Kriterij sortiranja</h2>
+            <ul>
+                <li>
+                    Kriterij sortiranja sadržava sljedeće:
+                    <ul>
+                        <li>Stupac - definira stupac prema kojem će se sortirati.</li>
+                        <li>Smjer sortiranja - definira smjer prema kojem će se sortirati, sadržava: "Uzlazno" (npr.: A-Z, 0-9) i "Silazno" (npr.: Z-A, 9-0).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

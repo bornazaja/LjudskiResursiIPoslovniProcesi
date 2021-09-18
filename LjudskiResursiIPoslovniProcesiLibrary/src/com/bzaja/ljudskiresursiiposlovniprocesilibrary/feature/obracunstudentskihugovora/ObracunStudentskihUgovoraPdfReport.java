@@ -1,0 +1,7 @@
+package com.bzaja.ljudskiresursiiposlovniprocesilibrary.feature.obracunstudentskihugovora;
+
+import com.bzaja.ljudskiresursiiposlovniprocesilibrary.feature.obracunugovora.ObracunUgovoraPdfReport;
+
+public interface ObracunStudentskihUgovoraPdfReport extends ObracunUgovoraPdfReport {
+
+}

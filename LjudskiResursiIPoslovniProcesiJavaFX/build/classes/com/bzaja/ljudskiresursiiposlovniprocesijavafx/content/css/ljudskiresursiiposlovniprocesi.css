@@ -1,0 +1,115 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-Feb-2019, 15:50:09
+    Author     : Borna
+*/
+
+*{
+    primary-color: #0d47a1;
+    secondary-color: #9933cc;
+    danger-color: #ff4444;
+    warning-color: #ffbb33;
+    success-color: #00c851;
+    info-color: #33b5e5;
+    dark-color: #212121;
+    light-grey-color: #efefef;
+}
+
+/******************************************************************************
+*                                                                             *
+* Backgrounds, texts                                              *
+*                                                                             *
+******************************************************************************/
+
+.h1, .title-text{
+    -fx-font-size: 24px;
+}
+
+.h2{
+    -fx-font-size: 20px;
+}
+
+.h3{
+    -fx-font-size: 16px;
+}
+
+.bg-primary{
+    -fx-background-color: primary-color;
+}
+
+.bg-secondary{
+    -fx-background-color: secondary-color;
+}
+
+.bg-white{
+    -fx-background-color: white;
+}
+
+.bg-danger{
+    -fx-background-color: danger-color;
+}
+
+.bg-warning{
+    -fx-background-color: warning-color;
+}
+
+.bg-success{
+    -fx-background-color: success-color;
+}
+
+.bg-info{
+    -fx-background-color: info-color;
+}
+
+.bg-dark{
+    -fx-background-color: dark-color;
+}
+
+.bg-transparent{
+    -fx-background-color: transparent;
+}
+
+.text-danger{
+    -fx-text-fill: danger-color;
+}
+
+.text-white{
+    -fx-text-fill: white;
+}
+
+.text-primary{
+    -fx-text-fill: primary-color;
+}
+
+.text-secondary{
+    -fx-text-fill: secondary-color;
+}
+
+
+.font-weight-bold{
+    -fx-font-weight: bold;
+}
+
+/******************************************************************************
+*                                                                             *
+* DashboardTile                                                               *
+*                                                                             *
+******************************************************************************/
+
+.dashboard-tile.dashboard-tile-text-white .label{
+    -fx-text-fill: white;
+}
+
+/******************************************************************************
+*                                                                             *
+* TableView                                                                   *
+*                                                                             *
+******************************************************************************/
+
+.table-view .table-cell{
+    -fx-alignment: BASELINE_CENTER;
+}

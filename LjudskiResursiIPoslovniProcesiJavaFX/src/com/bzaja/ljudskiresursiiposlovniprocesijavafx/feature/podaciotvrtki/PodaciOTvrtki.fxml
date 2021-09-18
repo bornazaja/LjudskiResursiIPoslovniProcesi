@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.bzaja.myjavafxlibrary.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<ScrollPane fx:id="root" fitToWidth="true" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bzaja.ljudskiresursiiposlovniprocesijavafx.feature.podaciotvrtki.PodaciOTvrtkiController">
+    <content>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints prefWidth="200.0" />
+                <ColumnConstraints hgrow="SOMETIMES" prefWidth="200.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+            <children>
+                <HBox GridPane.columnSpan="2">
+                    <children>
+                        <Label styleClass="h1" text="Podaci o tvrtki" />
+                        <Label fx:id="idPodaciOTvrtkiLabel" text="&lt;None&gt;" />
+                    </children>
+                </HBox>
+                <Label text="Naziv:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                <TextField fx:id="nazivTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label fx:id="nazivErrorLabel" styleClass="text-danger" text="&lt;None&gt;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label text="Ulica:" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+                <TextField fx:id="ulicaTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label fx:id="ulicaErrorLabel" styleClass="text-danger" text="&lt;None&gt;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label text="Grad:" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+                <SearchableComboBox fx:id="gradoviSearchableComboBox" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Label fx:id="gradErrorLabel" styleClass="text-danger" text="&lt;None&gt;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <Label text="OIB:" GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+                <TextField fx:id="oibTextField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <Label fx:id="oibErrorLabel" styleClass="text-danger" text="&lt;None&gt;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                <Label text="Email:" GridPane.halignment="RIGHT" GridPane.rowIndex="9" />
+                <TextField fx:id="emailTextField" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                <Label fx:id="emailErrorLabel" styleClass="text-danger" text="&lt;None&gt;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                <Label text="Broj telefona:" GridPane.halignment="RIGHT" GridPane.rowIndex="11" />
+                <TextField fx:id="brojTelefonaTextField" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                <Label fx:id="brojTelefonaErrorLabel" styleClass="text-danger" text="&lt;None&gt;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                <HBox spacing="10.0" GridPane.rowIndex="13">
+                    <children>
+                        <Button onAction="#onSpremiClick" text="Spremi" />
+                        <Button onAction="#onOdustaniClick" text="Odustani" />
+                    </children>
+                </HBox>
+            </children>
+        </GridPane>
+    </content>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</ScrollPane>

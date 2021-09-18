@@ -1,0 +1,7 @@
+package com.bzaja.ljudskiresursiiposlovniprocesilibrary.feature.obracunugovoraoradu;
+
+import com.bzaja.ljudskiresursiiposlovniprocesilibrary.feature.obracunugovora.ObracunUgovoraPdfReport;
+
+public interface ObracunUgovoraORaduPdfReport extends ObracunUgovoraPdfReport {
+
+}

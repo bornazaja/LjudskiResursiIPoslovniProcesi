@@ -1,0 +1,8 @@
+package com.bzaja.ljudskiresursiiposlovniprocesilibrary.feature.obracunstudentskihugovora;
+
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+public interface ObracunStudentskihUgovoraRepository extends PagingAndSortingRepository<ObracunStudentskihUgovora, Integer>, JpaSpecificationExecutor<ObracunStudentskihUgovora> {
+
+}

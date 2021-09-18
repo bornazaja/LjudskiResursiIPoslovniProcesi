@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.bzaja.myjavafxlibrary.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<ScrollPane fx:id="root" fitToWidth="true" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bzaja.ljudskiresursiiposlovniprocesijavafx.feature.transakcija.DodajUrediTransakcijuController">
+    <content>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints prefWidth="200.0" />
+                <ColumnConstraints hgrow="SOMETIMES" prefWidth="200.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+            <children>
+                <HBox GridPane.columnSpan="2">
+                    <children>
+                        <Label fx:id="naslovLabel" styleClass="h1" text="&lt;None&gt;" />
+                        <Label fx:id="idTransakcija" text="&lt;None&gt;" />
+                    </children>
+                </HBox>
+                <Label text="Poslovni partner:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                <SearchableComboBox fx:id="poslovniPartneriSearchableComboBox" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label fx:id="poslovniPartnerErrorMessage" styleClass="text-danger" text="&lt;None&gt;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label text="Opis:" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+                <TextField fx:id="opisTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label fx:id="opisErrorMessage" styleClass="text-danger" text="&lt;None&gt;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label text="Iznos:" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+                <NumberField fx:id="iznosNumberField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Label fx:id="iznosErrorLabel" styleClass="text-danger" text="&lt;None&gt;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <Label text="Valuta:" GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+                <SearchableComboBox fx:id="valuteSearchableComboBox" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <Label fx:id="valutaErrorLabel" styleClass="text-danger" text="&lt;None&gt;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                <Label text="Vrsta transakcije:" GridPane.halignment="RIGHT" GridPane.rowIndex="9" />
+                <SearchableComboBox fx:id="vrsteTransackijaSearchableComboBox" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                <Label fx:id="vrstaTransakcijeErrorLabel" styleClass="text-danger" text="&lt;None&gt;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                <Label text="Kategorija transakcije:" GridPane.halignment="RIGHT" GridPane.rowIndex="11" />
+                <SearchableComboBox fx:id="kategorijeTransakcijaSearchableComboBox" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                <Label fx:id="kategorijaTransakcijeErrorLabel" styleClass="text-danger" text="&lt;None&gt;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                <Label text="Datum transakcije:" GridPane.halignment="RIGHT" GridPane.rowIndex="13" />
+                <ClearableDatePicker fx:id="datumTransakcijeClearableDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                <Label fx:id="datumTransakcijeErrorLabel" styleClass="text-danger" text="&lt;None&gt;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                <HBox spacing="10.0" GridPane.rowIndex="15">
+                    <children>
+                        <Button onAction="#onSpremiClick" text="Spremi" />
+                        <Button onAction="#onOdustaniClick" text="Odustani" />
+                    </children>
+                </HBox>
+            </children>
+        </GridPane>
+    </content>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</ScrollPane>
