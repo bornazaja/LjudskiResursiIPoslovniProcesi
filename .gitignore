@@ -21,3 +21,36 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Rules for LjudskiResursiIPoslovniProcesiLibrary
+!/LjudskiResursiIPoslovniProcesiLibrary/**/
+/LjudskiResursiIPoslovniProcesiLibrary/build/*
+!/LjudskiResursiIPoslovniProcesiLibrary/lib/**
+!/LjudskiResursiIPoslovniProcesiLibrary/nbproject/**
+/LjudskiResursiIPoslovniProcesiLibrary/nbproject/private
+!/LjudskiResursiIPoslovniProcesiLibrary/sql/**
+!/LjudskiResursiIPoslovniProcesiLibrary/src/**
+!/LjudskiResursiIPoslovniProcesiLibrary/build.xml
+
+# Rules for LjudskiResursiIPoslovniProcesiJavaFX
+!/LjudskiResursiIPoslovniProcesiJavaFX/**/
+/LjudskiResursiIPoslovniProcesiJavaFX/build/*
+!/LjudskiResursiIPoslovniProcesiJavaFX/fonts/**
+!/LjudskiResursiIPoslovniProcesiJavaFX/lib/**
+!/LjudskiResursiIPoslovniProcesiJavaFX/nbproject/**
+/LjudskiResursiIPoslovniProcesiJavaFX/nbproject/private
+!/LjudskiResursiIPoslovniProcesiJavaFX/src/**
+!/LjudskiResursiIPoslovniProcesiJavaFX/build.xml
+!/LjudskiResursiIPoslovniProcesiJavaFX/manifest.mf
+
+# Rules for LjudskiResursiIPoslovniProcesiConsole
+!/LjudskiResursiIPoslovniProcesiConsole/**/
+/LjudskiResursiIPoslovniProcesiConsole/build/*
+/LjudskiResursiIPoslovniProcesiConsole/dist/*
+!/LjudskiResursiIPoslovniProcesiConsole/fonts/**
+!/LjudskiResursiIPoslovniProcesiConsole/lib/**
+!/LjudskiResursiIPoslovniProcesiConsole/nbproject/**
+/LjudskiResursiIPoslovniProcesiConsole/nbproject/private
+!/LjudskiResursiIPoslovniProcesiConsole/src/**
+!/LjudskiResursiIPoslovniProcesiConsole/build.xml
+!/LjudskiResursiIPoslovniProcesiConsole/manifest.mf
